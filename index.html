@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>new tab</title>
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<!-- style-->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body >
-	<div class="box time"> 
-		<div class="line"><div id="day"></div>, <div id="d"></div> <div id="mon"></div>  <div id="y"></div></div>
+
+<body>
+	<!-- time-->
+	<div class="box time">
+		<div class="line">
+			<div id="day"></div>,
+			<div id="d"></div>
+			<div id="mon"></div>
+			<div id="y"></div>
+		</div>
 		<br>
-		<div class="line"><div id="h"></div> : <div id="m"></div> :	<div id="s"></div></div>
+		<div class="line">
+			<div id="h"></div> :
+			<div id="m"></div> :
+			<div id="s"></div>
+		</div>
 	</div>
 
-	<div class="wave-container">
-    <div class="wave -one"></div>
-    <div class="wave -two"></div>
-    <div class="wave -three"></div>
-  </div>
+	<form>
+		<div class="box search">
+			<select class="search-btn" id="selectEngine">
+				<option value="google">GOOGLE</option>
+				<option value="bing">BING</option>
+				<option value="youtube">YOUTUBE</option>
+				<option value="yahoo">YAHOO</option>
+				<option value="ask">ASK</option>
+			</select>
+			<input class="search-box" type="text" autofocus tabindex="0" />
+			<button class="search-btn">
+				<img src="./icon/search-icon.svg" />
+			</button>
+		</div>
+	</form>
 
-  <script type="text/javascript" src="./assets/js/main.js"></script>
+	<!-- wave effect-->
+	<div class="wave-container">
+		<div class="wave -one"></div>
+		<div class="wave -two"></div>
+		<div class="wave -three"></div>
+	</div>
+
+
+	<!-- script -->
+	<script src="./js/main.js"></script>
+	<script src="./js/search.js"></script>
 </body>
+
 </html>
