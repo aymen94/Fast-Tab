@@ -1,24 +1,35 @@
 {
-   "author": "Aymen Naghmouchi",
-   "chrome_url_overrides": {
-      "newtab": "index.html"
-   },
-   "description": "New Tab page with time fast and light",
-   "icons": {
-      "128": "./icon/128.png",
-      "96": "./icon/96.png",
-      "72": "./icon/72.png",
-      "64": "./icon/64.png",
-      "48": "./icon/48.png",
-      "32": "./icon/32.png",
-      "24": "./icon/24.png",
-      "16": "./icon/16.png"
-   },
-   "manifest_version": 2,
-   "minimum_chrome_version": "29",
-   "name": "Tab with time",
-   "offline_enabled": true,
-   "short_name": "Tab with time",
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.0"
+    "author": "Aymen Naghmouchi",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "scripts": ["./js/background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_title": "",
+        "default_icon": "./icon/96.png"
+      },
+    "icons": {
+        "128": "./icon/128.png",
+        "96": "./icon/96.png",
+        "72": "./icon/72.png",
+        "64": "./icon/64.png",
+        "48": "./icon/48.png",
+        "32": "./icon/32.png",
+        "24": "./icon/24.png",
+        "16": "./icon/16.png"
+    },
+    "description": "New Tab page with time and search engine",
+    "manifest_version": 2,
+    "minimum_chrome_version": "29",
+    "name": "Fast Tab",
+    "offline_enabled": true,
+    "short_name": "Tab with time",
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "1.0"
 }
